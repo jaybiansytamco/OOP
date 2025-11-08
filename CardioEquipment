@@ -1,0 +1,15 @@
+public class CardioEquipment extends Equipment {
+    private int maxSpeed;
+
+    public CardioEquipment(int id, String name, int quantity, String condition, int maxSpeed) {
+        super(id, name, "Cardio", quantity, condition);
+        this.maxSpeed = maxSpeed;
+    }
+
+    public int getMaxSpeed() { return maxSpeed; }
+
+    @Override
+    public String toString() {
+        return super.toString() + " | Max Speed: " + maxSpeed + " km/h";
+    }
+}
