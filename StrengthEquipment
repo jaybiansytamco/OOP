@@ -1,0 +1,15 @@
+public class StrengthEquipment extends Equipment {
+    private int weightLimit;
+
+    public StrengthEquipment(int id, String name, int quantity, String condition, int weightLimit) {
+        super(id, name, "Strength", quantity, condition);
+        this.weightLimit = weightLimit;
+    }
+
+    public int getWeightLimit() { return weightLimit; }
+
+    @Override
+    public String toString() {
+        return super.toString() + " | Weight Limit: " + weightLimit + " kg";
+    }
+}
